@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 import img1 from "../../assets/img1.png";
 import img2 from "../../assets/img2.png";
 import img3 from "../../assets/img3.png";
@@ -50,14 +51,16 @@ function Page() {
   }
 
   return (
-    <div>
+    <div className='main'>
       <h1>Click on images to display content.</h1>
 
       {/* Display random text if available */}
-      {randomText && <h3>{randomText}</h3>}
+       <h3 >{randomText}</h3>
+       <div className='image-container'>
       <img src={img1} alt="squirrel" onClick={handleClick} />
       <img src={img3} alt="cheetah" onClick={handleClick2} />
       <img src={img2} alt="fox" onClick={handleClick3} />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+
+.main {
+        background: #282525;
+    color: beige;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.image-container img {
+    margin: 5px; 
+  }
