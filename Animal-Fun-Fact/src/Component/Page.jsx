@@ -23,30 +23,16 @@ function Page() {
   }
 
   function handleClick2() {
-    // Array of random text for the second image
     const randomTextArray = ['I clicked a cheetah', 'Cheetah is black and yellow', 'Catch the cheetah'];
-
-    // Generate a random index to select a random text
     const randomIndex = Math.floor(Math.random() * randomTextArray.length);
-
-    // Get the random text based on the index
     const newText = randomTextArray[randomIndex];
-
-    // Update the state with the new random text
     setRandomText(newText);
   }
 
   function handleClick3() {
-    // Array of random text for the third image
     const randomTextArray = ['I clicked a fox', 'Fox is tall', 'Catch the fox'];
-
-    // Generate a random index to select a random text
     const randomIndex = Math.floor(Math.random() * randomTextArray.length);
-
-    // Get the random text based on the index
     const newText = randomTextArray[randomIndex];
-
-    // Update the state with the new random text
     setRandomText(newText);
   }
 
