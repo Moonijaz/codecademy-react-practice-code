@@ -3,3 +3,6 @@ This repository contains the practice code  of projects that are given in codeca
 
 # Project 1 
 Animal Fun Fact
+
+# Project 2
+Authorization Form
