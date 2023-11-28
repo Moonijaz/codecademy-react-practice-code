@@ -1,8 +1,23 @@
-# React + Vite
+# Animal Fun Fact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React project allows users to click on different images, generating random text associated with each image.
 
-Currently, two official plugins are available:
+How to Use
+Click on the images to display random content associated with each image.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The displayed content changes dynamically on each click.
+
+Components
+Page Component
+handleClick: Handles clicks on the first image, displaying random text about squirrels.
+handleClick2: Handles clicks on the second image, displaying random text about cheetahs.
+handleClick3: Handles clicks on the third image, displaying random text about foxes.
+randomText: State to store the currently displayed random text.
+Project Structure
+src/assets: Contains image assets (img1.png, img2.png, img3.png).
+src/components/Page.js: Main React component file.
+Dependencies
+React
+...
+
+
