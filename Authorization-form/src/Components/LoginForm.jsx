@@ -1,48 +1,37 @@
+// src/components/LoginForm.js
 import React, { useState } from 'react';
 
 const LoginForm = () => {
-  // State to manage form fields
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [clear, setClear] = useState('');
 
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Add your authentication logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
-    // Reset the form after submission
-    setUsername('');
-    setPassword('');
+  const handleLogin = () => {
+    // Handle login logic here
+    console.log('hi');
+  };
+
+  const handleLClear = () => {
+    // Handle clear logic here
+    console.log('bye');
   };
 
   return (
-    <div>
-      <h1>Login Form</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <form>
+      <label>Email:</label>
+      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+      <label>Password:</label>
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+
+      <button type="button" onClick={handleLogin}>
+        Login
+      </button>
+      
+      <button type="button" onClick={handleLClear}>
+        Clear
+      </button>
+    </form>
   );
 };
 
